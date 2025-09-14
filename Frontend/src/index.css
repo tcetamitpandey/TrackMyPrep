@@ -1,0 +1,29 @@
+
+:root{
+  --primary_color : #5160ba;
+  --secondar_color : #daa2b0;
+  --accent : #ca937a;
+  --text : #070913;
+  --bg_color : #fafafd;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg_color);
+  color: var(--text);
+}
+
+
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 2rem; }
