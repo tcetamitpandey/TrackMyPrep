@@ -8,6 +8,7 @@ import is_valid_user from "./middlewares/Auth_middlewares.js";
 
 import {specific_topic_questions_router} from "./router/questions_router.js"
 import {interviewRouter} from "./router/interview_router.js"
+import {contact_router} from "./router/contact_us_router.js";
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -30,6 +31,7 @@ app.use("/api/questions",specific_topic_questions_router)
 app.use("/api/user" , User_router)
 
 app.use("/api/interview" , interviewRouter)
+app.use("/api/contactus" , contact_router)
 
 // app.post("/api/admin" , User_router)
 

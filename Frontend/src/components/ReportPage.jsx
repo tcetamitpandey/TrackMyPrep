@@ -82,6 +82,7 @@ export default function ReportPage({ reportProp }) {
                 <p className="question"><b>Question:</b> {b.question}</p>
                 <p className="answer"><b>Your Answer:</b> {b.user_answer}</p>
                 <p className="correct"><b>Correct Answer:</b> {b.correct_answer}</p>
+                <p className="marks"><b>Marks Obtain:</b> {b.marks}</p>
                 </div>
             </div>
             ))}

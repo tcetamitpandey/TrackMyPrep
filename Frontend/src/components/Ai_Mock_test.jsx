@@ -3,6 +3,7 @@ import toast, { Toaster } from "react-hot-toast"
 import { useDispatch, useSelector } from "react-redux"
 import {set_user_test_report} from "../store/user_test_report"
 import { useNavigate } from "react-router-dom"
+import {RingLoader} from "react-spinners"
 
 export default function Ai_Mock_test(){
 
@@ -159,7 +160,16 @@ export default function Ai_Mock_test(){
 
 
     if (loading) {
-        return <div className="ai_mock_test_container">AI is Thinking Pls Wait....</div>;
+
+        return (
+            <div className="ai_mock_test_container_loading">
+              <div className="spinner_content">
+                <RingLoader color="#444ce7" size={120} /> 
+                <p className="spinner_text"> <span className="ai_mock_test_container_loading_star" >&#10024;</span> Let AI do its magic…</p>
+              </div>
+            </div>
+          );
+        
     }
 
     return(
